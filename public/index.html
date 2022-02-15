@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База чил-аута</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="send-form">
+        <form class="decor" name="send" method="post" action="http://localhost:3001/index">
+            <div class="close"></div>
+            <div class="form-left-decoration"></div>
+            <div class="form-right-decoration"></div>
+            <div class="circle"></div>
+            <div class="form-inner">
+                <h3>Написать нам</h3>
+                <p class="send-form-house"></p>
+                <input type="hidden" placeholder="Домик" required name="house">
+                <input type="email" placeholder="Введите ваш email" required name="email">
+                <input type="tel" placeholder="Введите телефон" name="phone">
+                <textarea placeholder="Сообщение..." rows="3" required name="text"></textarea>
+                <input type="submit" value="Отправить" name="sub">
+            </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="header-nav">
+                    <nav class="nav-list">
+                        <li class="header-li"><a id="price">Дома и котеджи</a></li>
+                        <li class="header-li"><a id="services">Услуги</a></li>
+                        <li class="header-li"><a id="showplace">Достопримечательности</a></li>
+                        <li class="header-li"><a id="comments">Отзывы</a></li>
+                        <li class="header-li"><a id="geolocation">Контакты</a></li>
+                    </nav>
+                </div>
+                <div class="header-contacts">
+                    <div class="header-contact">
+                        <a href="tel:+77050808021">+7 705 080 80 21</a>
+                    </div>
+                    <div class="header-contact">
+                        <a href="tel:+77774750064">+7 777 00 64</a>
+                    </div>
+                </div>
+                <div class="header-button">
+                    <button class="button-header clicker"><a>Забронировать</a></button>
+                </div>
+                <button class="burger" type="button">
+                    <span class="header-burger">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="scroll-element">
+        <div class="sroll-begin">
+            <div class="scroll-arrow-1">
+            </div>
+            <div class="scroll-arrow-2">
+            </div>
+            <div class="scroll-arrow-3">
+            </div>
+        </div>
+    </section>
+
+    <section class="body-content">
+        <div class="container">
+            <div class="show-house">
+                <div class="house-info">
+                    <div class="house-info-main house-info-center">
+                        <div class="title-house">
+                            <p>База отдыха</p>
+                            <p class="green">Подворье</p>
+                        </div>
+                        <div class="description-house">
+                            <p>Увлекательный отдых в месте<br> у реки в уютных домах из сруба в стиле древнего русского
+                                зодчества
+                            </p>
+                        </div>
+                    </div>
+                    <div class="house-info-main">
+                        <div class="house-info-img">
+                            <img src="img/house/house2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="house-img house-price-overflow">
+                    <img src="img/house/house1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="chill-plus">
+        <div class="container">
+            <div class="chill-content">
+                <div class="chill-img">
+                    <img src="img/chill-info/river.jpg" alt="">
+                </div>
+                <div class="chill-container margin-auto">
+                    <div class="chill-info-1">
+                        <p class="title-chill">Уникальное</p>
+                        <p class="title-chill green">расположение</p>
+                        </p>
+                        <p class="description-chill">Наша база расположена в Боровом на берегу реки
+                            Аулиеколь,
+                            что позволит вам в полной мере насладиться природой не выезжая далеко от города</p>
+                        <div class="chill-button-pos">
+                            <button class="chill-button clicker">
+                                <p class="text-chill-button">Забронировать</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chill-container width-100">
+                    <div class="displey-chill">
+                        <div class="chill-info-2 margin-auto">
+                            <p class="title-chill">Ваш отдых -</p>
+                            <p class="title-chill green">наша забота</p>
+                            </p>
+                            <p class="description-chill none-block">У нас можно отдохнуть в уютных домиках<br> в стиле
+                                древнего
+                                русского
+                                зодчества, попариться<br class="display-br"> в русской бане, а после - окунуться в
+                                купель<br> из ангарской
+                                лиственницы.
+                                На берегу озера<br> Аулиеколь есть возможности для рыбалки<br> и водных прогулок.</p>
+                            <p class="description-chill-none">У нас можно отдохнуть в уютных домиках в стиле древнего
+                                русского
+                                зодчества, попариться в русской бане, а после - окунуться в
+                                купель из ангарской
+                                лиственницы.
+                                На берегу реки Кочеты есть возможности для рыбалки и водных прогулок.</p>
+                            <button class="chill-button-2 clicker">
+                                <p class="text-chill-button">Забронировать</p>
+                            </button>
+                        </div>
+                        <div class="chill-img-2 house-price-overflow">
+                            <img src="img/chill-info/sauna.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="house-features">
+        <div class="container">
+            <div class="features-content">
+                <div class="features-container">
+                    <div class="features-shadow"></div>
+                    <img src="img/picker/image 1.jpg" alt="">
+                    <div class="features-text">
+                        <p>Настоящая Русская баня на дровах</p>
+                    </div>
+                    <div class="show-place-features">
+                        <div class="show-place-features-content">
+                            <div class="show-place-features-text">
+                                <p><a class="clicker">Забронировать
+                                        уютный
+                                        домик</a></p>
+                            </div>
+                            <div class="arrow-img">
+                                <img src="img/picker/arrow-right.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="features-container">
+                    <div class="features-shadow"></div>
+                    <img src="img/picker/image 2.jpg" alt="">
+                    <div class="features-text">
+                        <p>Водные прогулки на лодках (лодки сдаются в аренду)</p>
+                    </div>
+                    <div class="show-place-features">
+                        <div class="show-place-features-content">
+                            <div class="show-place-features-text">
+                                <p><a class="clicker">Забронировать
+                                        уютный
+                                        домик</a></p>
+                            </div>
+                            <div class="arrow-img">
+                                <img src="img/picker/arrow-right.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-container">
+                    <div class="features-shadow"></div>
+                    <img src="img/picker/image 3.jpg" alt="">
+                    <div class="features-text">
+                        <p>Купель из ангарской лиственницы до 12 человек</p>
+                    </div>
+                    <div class="show-place-features">
+                        <div class="show-place-features-content">
+                            <div class="show-place-features-text">
+                                <p><a class="clicker">Забронировать
+                                        уютный
+                                        домик</a></p>
+                            </div>
+                            <div class="arrow-img">
+                                <img src="img/picker/arrow-right.png" class="clicker" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-container">
+                    <div class="features-shadow"></div>
+                    <img src="img/picker/image 4.jpg" alt="">
+                    <div class="features-text">
+                        <p>&nbsp;<br>Рыбалка</p>
+                    </div>
+                    <div class="show-place-features">
+                        <div class="show-place-features-content">
+                            <div class="show-place-features-text">
+                                <p><a class="clicker">Забронировать
+                                        уютный
+                                        домик</a></p>
+                            </div>
+                            <div class="arrow-img">
+                                <img src="img/picker/arrow-right.png" class="clicker" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-container">
+                    <div class="features-shadow"></div>
+                    <img src="img/picker/image 5.jpg" alt="">
+                    <div class="features-text">
+                        <p>&nbsp;<br>Детская площадка</p>
+                    </div>
+                    <div class="show-place-features">
+                        <div class="show-place-features-content">
+                            <div class="show-place-features-text">
+                                <p><a href="sendForm.html" class="clicker">Забронировать
+                                        уютный
+                                        домик</a></p>
+                            </div>
+                            <div class="arrow-img">
+                                <img src="img/picker/arrow-right.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-container">
+                    <div class="features-shadow"></div>
+                    <img src="img/picker/image 6.jpg" alt="">
+                    <div class="features-text">
+                        <p>&nbsp;<br>Футбольное поле</p>
+                    </div>
+                    <div class="show-place-features">
+                        <div class="show-place-features-content">
+                            <div class="show-place-features-text">
+                                <p><a class="clicker">Забронировать
+                                        уютный
+                                        домик</a></p>
+                            </div>
+                            <div class="arrow-img">
+                                <img src="img/picker/arrow-right.png" class="clicker" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-container">
+                    <div class="features-shadow"></div>
+                    <img src="img/picker/image 7.jpg" alt="">
+                    <div class="features-text">
+                        <p>Беседки открытые от 8 до 15 человек</p>
+                    </div>
+                    <div class="show-place-features">
+                        <div class="show-place-features-content">
+                            <div class="show-place-features-text">
+                                <p><a class="clicker">Забронировать
+                                        уютный
+                                        домик</a></p>
+                            </div>
+                            <div class="arrow-img">
+                                <img src="img/picker/arrow-right.png" class="clicker" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-container">
+                    <div class="features-shadow"></div>
+                    <img src="img/picker/image 8.jpg" alt="">
+                    <div class="features-text">
+                        <p>Беседки закрытые от 15 до 50 человек</p>
+                    </div>
+                    <div class="show-place-features">
+                        <div class="show-place-features-content">
+                            <div class="show-place-features-text">
+                                <p><a class="clicker">Забронировать
+                                        уютный
+                                        домик</a></p>
+                            </div>
+                            <div class="arrow-img">
+                                <img src="img/picker/arrow-right.png" class="clicker" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-container features-height">
+                    <img src="img/picker/image 8.jpg" alt="" class="features-display-none">
+                    <div class="features-text features-display-none">
+                        <p>Беседки закрытые от 15 до 50 человек</p>
+                    </div>
+                    <div class="show-place-features-last">
+                        <div class="show-place-features-content">
+                            <div class="show-place-features-text-last">
+                                <p><a class="clicker">Забронировать
+                                        уютный
+                                        домик</a></p>
+                            </div>
+                            <div class="arrow-img-last">
+                                <img src="img/picker/arrow-right.png" class="clicker" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="house-price-prewiev">
+        <div class="container">
+            <div class="house-price-prewiev-content">
+                <div class="house-price-prewiev-img">
+                    <img src="img/price-house/house-1.jpg" alt="">
+                </div>
+                <div class="house-price-prewiev-text">
+                    <div class="house-price-prewiev-title">
+                        <p>Наши домики</p>
+                        <p class="green">и котеджи</p>
+                    </div>
+                    <div class="house-price-prewiev-description">
+                        <p class="p-house-prewiev-first">Дома из сруба, построены по специальной технологии, с
+                            сохранением природных качеств дерева, с
+                            использованием экологически чистых материалов в конструкции и в отделке помещений.
+                        </p>
+                        <p class="p-house-prewiev">Всего на территории 5 двухэтажных домов, в которых одновременно может
+                            проживать до 50
+                            человек.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="house-price">
+        <div class="container">
+            <div class="house-price-content">
+                <div class="house-price-info">
+                    <div class="house-price-info-title">
+                        <p>Дом «Охотника»</p>
+                    </div>
+                    <div class="house-price-info-characteristic">
+                        <p>2 этажа, 120 м², 12 человек</p>
+                    </div>
+                    <div class="house-price-info-list">
+                        <ul class="house-price-info-list-ul">
+                            <li class="house-price-info-list-li text-nowrap">3 кровати</li>
+                            <li class="house-price-info-list-li">Душ</li>
+                            <li class="house-price-info-list-li">Телевизор</li>
+                            <li class="house-price-info-list-li">Терраса</li>
+                            <li class="house-price-info-list-li">Кухня</li>
+                        </ul>
+                    </div>
+                    <div class="house-price-info-text">
+                        Деревянный сруб с огромной террасой с выходом на реку, рассчитан на 12 человек, 3 изолированных
+                        спальни с двухспальной кроватью, 3 дивана в проходных комнатах, есть кухня с полным комплектом
+                        столовых приборов, холодильник, микроволновая печь, чайник, телевизор, спутниковое телевидение
+                        Триколор, кондиционер, есть стиральная машинка, сушилка для белья
+                    </div>
+                    <div class="house-price-info-button">
+                        <button class="chill-button">
+                            <p class="text-chill-button fix-widht">Забронировать</p>
+                        </button>
+                        <div class="house-price-info-content">
+                            <p class="house-price-info-price">20 000</p>
+                            <p class="house-price-info-unit">тг/сутки</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house-price-info-img house-price-img-margin-right house-price-overflow">
+                    <img src="img/price-house/house-2.jpg" alt="">
+                    <div class="house-price-img-container-mini">
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-1/Photo 1.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-1/Photo 2.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-1/Photo 3.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-1/Photo 5.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-1/Photo 6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="house-price-mini-content">
+                        <p>1/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="house-price-content">
+                <div class="house-price-info-img">
+                    <img src="img/price-house/house-3.jpg" alt="">
+                    <div class="house-price-img-container-mini">
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-2/Photo 1.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-2/Photo 2.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-2/Photo 3.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-2/Photo 5.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-2/Photo 6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="house-price-mini-content">
+                        <p>1/5</p>
+                    </div>
+                </div>
+                <!-- Dom 2 -->
+                <div class="house-price-info house-price-info-padding">
+                    <div class="house-price-info-title">
+                        <p>Дом «Лесника» с баней</p>
+                    </div>
+                    <div class="house-price-info-characteristic">
+                        <p>2 этажа, 72 м², 8 человек</p>
+                    </div>
+                    <div class="house-price-info-list">
+                        <ul class="house-price-info-list-ul">
+                            <li class="house-price-info-list-li text-nowrap">4 кровати</li>
+                            <li class="house-price-info-list-li">Душ</li>
+                            <li class="house-price-info-list-li">Телевизор</li>
+                            <li class="house-price-info-list-li">Балкон</li>
+                            <li class="house-price-info-list-li">Баня</li>
+                        </ul>
+                    </div>
+                    <div class="house-price-info-text">
+                        Деревянный сруб рассчитан на 8 человек, парилка в русском стиле, 2 изолированных спальни с
+                        двухспальной кроватью, топчан двухспальный, диван в проходной комнате, вся мебель ручной работы,
+                        холодильник, микроволновая печь, чайник, чайные приборы, телевизор, кондиционер
+                    </div>
+                    <div class="house-price-info-button">
+                        <button class="chill-button">
+                            <p class="text-chill-button">Забронировать</p>
+                        </button>
+                        <div class="house-price-info-content">
+                            <p class="house-price-info-price">12 000</p>
+                            <p class="house-price-info-unit">тг/сутки</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="house-price-content">
+                <div class="house-price-info">
+                    <div class="house-price-info-title">
+                        <p>Дом «Рыбака» с баней</p>
+                    </div>
+                    <div class="house-price-info-characteristic">
+                        <p>2 этажа, 72 м², 8 человек</p>
+                    </div>
+                    <div class="house-price-info-list">
+                        <ul class="house-price-info-list-ul">
+                            <li class="house-price-info-list-li text-nowrap">4 кровати</li>
+                            <li class="house-price-info-list-li">Душ</li>
+                            <li class="house-price-info-list-li">Телевизор</li>
+                            <li class="house-price-info-list-li">Балкон</li>
+                            <li class="house-price-info-list-li">Баня</li>
+                        </ul>
+                    </div>
+                    <div class="house-price-info-text">
+                        Деревянный сруб, парилка в русском стиле, 2 изолированных спальни с двухспальной кроватью,
+                        топчан двухспальный, диван <br>в проходной комнате, вся мебель ручной работы, холодильник,
+                        микроволновая печь, чайник, чайные приборы, кондиционер
+                    </div>
+                    <div class="house-price-info-button">
+                        <button class="chill-button">
+                            <p class="text-chill-button">Забронировать</p>
+                        </button>
+                        <div class="house-price-info-content">
+                            <p class="house-price-info-price">12 000</p>
+                            <p class="house-price-info-unit">тг/сутки</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house-price-info-img house-price-img-margin-right house-price-overflow">
+                    <img src="img/price-house/house-4.jpg" alt="">
+                    <div class="house-price-img-container-mini">
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-3/Photo 1.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-3/Photo 2.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-3/Photo 3.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-3/Photo 5.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-3/Photo 6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="house-price-mini-content">
+                        <p>1/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="house-price-content">
+                <div class="house-price-info-img">
+                    <img src="img/price-house/house-5.jpg" alt="">
+                    <div class="house-price-img-container-mini">
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-4/Photo 1.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-4/Photo 2.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-4/Photo 3.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-4/Photo 5.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-4/Photo 6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="house-price-mini-content">
+                        <p>1/5</p>
+                    </div>
+                </div>
+
+                <div class="house-price-info house-price-info-padding ">
+                    <div class="house-price-info-title">
+                        <p>Коттедж «Уютный»</p>
+                    </div>
+                    <div class="house-price-info-characteristic">
+                        <p>Первый этаж, 36 м², 4 человека, полулюкс</p>
+                    </div>
+                    <div class="house-price-info-list">
+                        <ul class="house-price-info-list-ul">
+                            <li class="house-price-info-list-li text-nowrap">2 кровати</li>
+                            <li class="house-price-info-list-li">Душ</li>
+                            <li class="house-price-info-list-li">Телевизор</li>
+                            <li class="house-price-info-list-li">Терраса</li>
+                        </ul>
+                    </div>
+                    <div class="house-price-info-text">
+                        Коттедж «Уютный», первый этаж, полулюкс, 36 кв.м, 2-х комнатный, рассчитан на 4 человека,
+                        холодильник, микроволновая печь, чайник, чайные приборы
+                    </div>
+                    <div class="house-price-info-button">
+                        <button class="chill-button">
+                            <p class="text-chill-button">Забронировать</p>
+                        </button>
+                        <div class="house-price-info-content">
+                            <p class="house-price-info-price">6 000</p>
+                            <p class="house-price-info-unit">тг/сутки</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="house-price-content">
+                <div class="house-price-info">
+                    <div class="house-price-info-title">
+                        <p>Коттедж «Уютный»</p>
+                    </div>
+                    <div class="house-price-info-characteristic">
+                        <p>Второй этаж, 30 м², 2 человека, стандарт</p>
+                    </div>
+                    <div class="house-price-info-list">
+                        <ul class="house-price-info-list-ul">
+                            <li class="house-price-info-list-li text-nowrap">2 кровати</li>
+                            <li class="house-price-info-list-li">Душ</li>
+                            <li class="house-price-info-list-li">Телевизор</li>
+                            <li class="house-price-info-list-li">Балкон</li>
+                        </ul>
+                    </div>
+                    <div class="house-price-info-text">
+                        Коттедж «Уютный», второй этаж, стандарт, 30 кв.м, с балконом, рассчитан на 2 человек +
+                        дополнительное место, холодильник, кондиционер, микроволновая печь, чайник, чайные приборы
+                    </div>
+                    <div class="house-price-info-button">
+                        <button class="chill-button">
+                            <p class="text-chill-button">Забронировать</p>
+                        </button>
+                        <div class="house-price-info-content">
+                            <p class="house-price-info-price">4 000</p>
+                            <p class="house-price-info-unit">тг/сутки</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house-price-info-img house-price-img-margin-right house-price-overflow">
+                    <img src="img/price-house/house-6.jpg" alt="">
+                    <div class="house-price-img-container-mini">
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-5/Photo 1.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-5/Photo 2.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-5/Photo 3.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-5/Photo 5.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-5/Photo 6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="house-price-mini-content">
+                        <p>1/5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="house-price-content">
+                <div class="house-price-info-img">
+                    <img src="img/price-house/house-7.jpg" alt="">
+                    <div class="house-price-img-container-mini">
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-6/Photo 1.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-6/Photo 2.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-6/Photo 3.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-6/Photo 5.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-6/Photo 6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="house-price-mini-content">
+                        <p>1/5</p>
+                    </div>
+                </div>
+
+                <div class="house-price-info house-price-info-padding ">
+                    <div class="house-price-info-title">
+                        <p>Коттедж «Деревенский»</p>
+                    </div>
+                    <div class="house-price-info-characteristic">
+                        <p>Первый этаж, 36 м², 4 человека, полулюкс</p>
+                    </div>
+                    <div class="house-price-info-list">
+                        <ul class="house-price-info-list-ul">
+                            <li class="house-price-info-list-li text-nowrap">2 кровати</li>
+                            <li class="house-price-info-list-li">Душ</li>
+                            <li class="house-price-info-list-li">Телевизор</li>
+                            <li class="house-price-info-list-li">Терраса</li>
+                        </ul>
+                    </div>
+                    <div class="house-price-info-text">
+                        Коттедж «Деревенский», первый этаж, полулюкс, 36 кв.м, 2-х комнатный, рассчитан на 4 человека,
+                        холодильник, микроволновая печь, чайник, чайные приборы
+                    </div>
+                    <div class="house-price-info-button">
+                        <button class="chill-button">
+                            <p class="text-chill-button">Забронировать</p>
+                        </button>
+                        <div class="house-price-info-content">
+                            <p class="house-price-info-price">6 000</p>
+                            <p class="house-price-info-unit">тг/сутки</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="house-price-content">
+                <div class="house-price-info">
+                    <div class="house-price-info-title">
+                        <p>Коттедж «Деревенский»</p>
+                    </div>
+                    <div class="house-price-info-characteristic">
+                        <p>Второй этаж, 30 м², 2 человека, стандарт</p>
+                    </div>
+                    <div class="house-price-info-list">
+                        <ul class="house-price-info-list-ul">
+                            <li class="house-price-info-list-li text-nowrap">2 кровати</li>
+                            <li class="house-price-info-list-li">Душ</li>
+                            <li class="house-price-info-list-li">Телевизор</li>
+                            <li class="house-price-info-list-li">Балкон</li>
+                        </ul>
+                    </div>
+                    <div class="house-price-info-text">
+                        Коттедж «Деревенский», второй этаж, стандарт, 30 кв.м, с балконом, рассчитан на 2 человек +
+                        дополнительное место, холодильник, кондиционер, микроволновая печь, чайник
+                    </div>
+                    <div class="house-price-info-button">
+                        <button class="chill-button">
+                            <p class="text-chill-button">Забронировать</p>
+                        </button>
+                        <div class="house-price-info-content">
+                            <p class="house-price-info-price">4 000</p>
+                            <p class="house-price-info-unit">тг/сутки</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house-price-info-img house-price-img-margin-right house-price-overflow">
+                    <img src="img/price-house/house-8.jpg" alt="">
+                    <div class="house-price-img-container-mini">
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-7/Photo 1.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-7/Photo 2.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-7/Photo 3.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-7/Photo 5.jpg" alt="">
+                        </div>
+                        <div class="house-price-img-mini">
+                            <img src="img/price-house/mini-7/Photo 6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="house-price-mini-content">
+                        <p>1/5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="house-price-content">
+                <div class="house-price-info-img">
+                    <img src="img/price-house/house-9.jpg" alt="">
+                </div>
+
+                <div class="house-price-info house-price-info-padding ">
+                    <div class="house-price-info-title">
+                        <p>Парная</p>
+                    </div>
+                    <div class="house-price-info-text last-two-element-price">
+                        Настоящая русская баня, парилка в русском стиле только для дома «Лесника» с баней и дома
+                        «Рыбака» с баней
+                    </div>
+                    <div class="house-price-info-button">
+                        <button class="chill-button">
+                            <p class="text-chill-button">Забронировать</p>
+                        </button>
+                        <div class="house-price-info-content">
+                            <p class="house-price-info-price">3 000</p>
+                            <p class="house-price-info-unit">тг/3 часа</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="house-price-content">
+                <div class="house-price-info">
+                    <div class="house-price-info-title">
+                        <p>Теплая беседка</p>
+                    </div>
+                    <div class="house-price-info-text last-two-element-price">
+                        Большая теплая беседка, вмещает до 45 человек, порадует комфортом, теплый камин согреет теплом и
+                        уютом
+                    </div>
+                    <div class="house-price-info-button">
+                        <button class="chill-button">
+                            <p class="text-chill-button">Забронировать</p>
+                        </button>
+                        <div class="house-price-info-content">
+                            <p class="house-price-info-prew-unit house-price-info-prew-unit-last">от</p>
+                            <p class="house-price-info-price">500</p>
+                            <p class="house-price-info-unit">тг</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house-price-info-img house-price-img-margin-right house-price-overflow">
+                    <img src="img/price-house/house-10.jpg" alt="">
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="showplace">
+        <div class="container">
+            <div class="showplace-content">
+                <div class="show-place-img">
+                    <img src="img/show-place/happy.jpg" alt="">
+                </div>
+                <div class="showplace-info showplace-title-margin-top">
+                    <div class="showplace-title">
+                        <p>Бурабайское</p>
+                        <p class="green show-place-title-p">богатство</p>
+                    </div>
+                    <div class="showplace-text">
+                        Озеро Аулиеколь расположено в пределах Кокшетауского нагорья, у восточного подножия г. Кокше.
+                        Площадь водного зеркала составляет около 11 кв. км. Средняя глубина озера 3,4 м, наибольшая
+                        глубина наблюдается в северной части и достигает 7,0 м. Водная поверхность озера открытая,
+                        небольшие заросли тростника встречаются только в небольшом юго-западном мелководном заливе.
+
+                    </div>
+                </div>
+            </div>
+            <div class="showplace-content flex-column-reverse">
+                <div class="showplace-info showplace-delete-bottom">
+                    <div class="showplace-text delete-top-margin">
+                        Дно у берегов преимущественно песчаное и песчано-галечное, ближе к середине - суглинистое,
+                        заиленное, а у горного юго-восточного берега каменистое.
+                        <p>На озере ведутся режимные наблюдения Северо-Казахстанской гидрогеологической партией с
+                            сентября 1945 г. по настоящее время. Озеро бессточное, постоянных притоков не имеет.</p>
+                    </div>
+                </div>
+                <div class="show-place-img-2">
+                    <div class="display-none">
+                        <img src="img/show-place/house.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="showplace-img-container">
+                <div class="showplace-mini-img">
+                    <img src="img/show-place/image 2.jpg" alt="">
+                </div>
+                <div class="showplace-mini-img">
+                    <img src="img/show-place/image 3.jpg" alt="">
+                </div>
+                <div class="showplace-mini-img house-price-overflow">
+                    <img src="img/show-place/image 4.jpg" alt="">
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <section class="comments">
+        <div class="container">
+            <div class="comments-content">
+                <div class="comments-content-title">
+                    <p>Отзывы</p>
+                </div>
+                <div class="comments-content-container">
+                    <div class="comments-content-user">
+                        <div class="comments-user-grade">
+                            <div class="comments-content-img">
+                                <img src="img/comment/img-1.jpg" alt="">
+                            </div>
+                            <div class="comments-content-stars">
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-user-text-content">
+                            <div class="commetns-user-name-and-date">
+                                <div class="comments-user-name">
+                                    Елена
+                                </div>
+                                <div class="comments-user-date">
+                                    4 мая 2021
+                                </div>
+                            </div>
+                            <div class="comments-user-text">
+                                <p>
+                                    Замечательное место для отдыха. Приехали сюда в первый раз и остались очень
+                                    довольные.
+                                    Душевные, радушные хозяева, база очень красивая, все продумано до мелочей, номера
+                                    сказочные, тепло и уют везде, заряд энергии получен, вернемся обязательно сюда.
+                                    Рекомендую. Базе «Подворье» процветания и только добрых и позитивных гостей. Всем
+                                    хороших выходных.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comments-content-user">
+                        <div class="comments-user-grade">
+                            <div class="comments-content-img">
+                                <img src="img/comment/img-2.jpg" alt="">
+                            </div>
+                            <div class="comments-content-stars">
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-user-text-content">
+                            <div class="commetns-user-name-and-date">
+                                <div class="comments-user-name">
+                                    Дарья
+                                </div>
+                                <div class="comments-user-date">
+                                    12 апреля 2021
+                                </div>
+                            </div>
+                            <div class="comments-user-text">
+                                <p>
+                                    Отличное место для отдыха! Очень уютные домики, все чисто и опрятно. Отдыхали с
+                                    семьей,
+                                    получили массу положительных эмоций.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comments-content-user">
+                        <div class="comments-user-grade">
+                            <div class="comments-content-img">
+                                <img src="img/comment/img-3.jpg" alt="">
+                            </div>
+                            <div class="comments-content-stars">
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                                <div class="comments-content-star">
+                                    <img src="img/comment/star.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-user-text-content">
+                            <div class="commetns-user-name-and-date">
+                                <div class="comments-user-name">
+                                    Андрей
+                                </div>
+                                <div class="comments-user-date">
+                                    27 марта 2021
+                                </div>
+                            </div>
+                            <div class="comments-user-text">
+                                <p>
+                                    Всем привет. Решился на отзыв. Искали где отдохнуть с однокурсниками и вот друг
+                                    посоветовал эту базу отдыха. Остались впечатлены. Не зря поехали. На следующие
+                                    выходные
+                                    снова приедем!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="geolocation">
+        <div class="container">
+            <div class="geolocation-content">
+                <div class="geolocation-title">
+                    <p>Наши контакты</p>
+                </div>
+                <div class="geolocation-info">
+                    <div class="geolocation-number">
+                        <a href="tel:+77050808021">+7 705 080 80 21</a>
+                    </div>
+                    <div class="geolocation-number">
+                        <a href="tel:+77774750064">+7 777 475 00 64</a>
+                    </div>
+                    <div class="geolocation-street">
+                        <address>Бурабай ул. Зеленая, д.1а</address>
+                    </div>
+                    <div class="geolocation-post">
+                        <a class="green" href="mailto:podvorieburabay@yandex.ru">podvorieburabay@yandex.ru</a>
+                    </div>
+                </div>
+                <!--api  AIzaSyAn6Oh9yLqqubcxbp_XomxIGAc5MYSzdhg -->
+                <!-- <div class="geolocation-map">
+                    <img src="img/geolocation/map.jpg" alt="">
+                </div> -->
+                <div id="map">
+
+                </div>
+                <div class="geolocation-messenger">
+                    <p>2021 © База отдыха «Подворье»</p>
+                    <div class="geolocation-messenger-ico">
+                        <a><img src="img/geolocation/ico/facebook.svg" alt=""></a>
+                        <a><img src="img/geolocation/ico/ok.svg" alt=""></a>
+                        <a><img src="img/geolocation/ico/vk.svg" alt=""></a>
+                        <a><img src="img/geolocation/ico/instagramm.svg" alt=""></a>
+                        <a><img src="img/geolocation/ico/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="map.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn6Oh9yLqqubcxbp_XomxIGAc5MYSzdhg&callback=initMap&v=weekly"
+        async></script>
+    <script src="sendFile/buttons.js"></script>
+</body>
+<script src="app.js"></script>
+
+
+</html>

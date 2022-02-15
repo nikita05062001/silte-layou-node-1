@@ -1,0 +1,2522 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #161616;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+img,
+section,
+div,
+li,
+ul,
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.green {
+    color: #219653;
+}
+
+.header {
+    height: 100px;
+    margin-top: 10px;
+}
+
+
+
+.header-content {
+    display: flex;
+    margin: auto 0px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.header-logo {
+    margin: 0 53px;
+}
+
+
+.nav-list {
+    display: flex;
+}
+
+.header-li {
+    margin-right: 40px;
+}
+
+.header-li:last-child {
+    margin-right: 0px;
+}
+
+
+.header-contacts {
+    display: flex;
+    margin-left: 333px;
+
+}
+
+.header-contact {
+    margin-right: 41px;
+
+}
+
+.header-contact a {
+    color: #161616;
+}
+
+.header-contact:last-child {
+    margin-right: 50px;
+}
+
+.header-button {
+    margin-left: auto;
+}
+
+
+.button-header {
+    background-color: #E1FFEE;
+    border: solid 0px;
+    color: #219653;
+    height: 100px;
+    width: 246px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+.button-header:hover {
+    background-color: rgb(132, 255, 212);
+}
+
+.burger {
+
+    cursor: pointer;
+    display: none;
+    margin-left: 25px;
+    margin-right: 45px;
+    margin-top: 1px;
+    background: none;
+    border: none;
+    position: relative;
+    padding: 4.5px 9px;
+
+}
+
+.header-burger {
+    font-size: 0;
+    color: transparent;
+    width: 18px;
+    background-color: #161616;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: all 0.3s ease 0s;
+}
+
+.header-burger::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    left: 0px;
+    top: 7px;
+    margin: 0px;
+    background-color: #161616;
+    transition: all 0.3s ease 0s;
+}
+
+.burger._active {
+    transform: rotate(38deg);
+}
+
+.burger._active .header-burger {
+    top: 50%;
+    transform: rotate(-75deg) translate(0, -50%);
+    background-color: red;
+}
+
+.burger._active .header-burger::before {
+    top: 50%;
+    transform: rotate(75deg) translate(0, -50%);
+    width: 18px;
+    background-color: red;
+}
+
+.scroll-element {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(132, 255, 212);
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+    transition: left 0.5s;
+}
+
+.scroll-element._active {
+    left: 10px;
+    transition: 0.5s;
+}
+
+.sroll-begin {
+    position: relative;
+}
+
+.scroll-arrow-1 {
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background-color: #219653;
+    left: 4px;
+    top: 15px;
+    transform: rotate(-45deg);
+    border-radius: 40%;
+}
+
+.scroll-arrow-2 {
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background-color: #219653;
+    right: 4px;
+    top: 15px;
+    transform: rotate(45deg);
+    border-radius: 40%;
+}
+
+.scroll-arrow-3 {
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background-color: #219653;
+    left: 15%;
+    top: 24px;
+    transform: rotate(90deg);
+    border-radius: 40%;
+}
+
+.scroll-element:hover .scroll-arrow-1,
+.scroll-element:hover .scroll-arrow-2,
+.scroll-element:hover .scroll-arrow-3 {
+    background-color: rgb(12, 87, 90);
+}
+
+.show-house {
+    display: flex;
+    margin-top: -4px;
+}
+
+.title-house {
+    margin-left: 90px;
+    margin-top: 78px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 130%;
+}
+
+.description-house {
+    margin-left: 90px;
+    margin-top: 25px;
+    width: 420px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.house-img {
+    margin-left: 0px;
+    margin-top: 4px;
+    max-width: 70.666666666666666%;
+}
+
+.house-info-img {
+    margin-top: 91px;
+}
+
+.chill-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chill-info-1 {
+    max-width: 440px;
+    margin-left: 90px;
+    margin-top: 68px;
+}
+
+.chill-info-2 {
+    max-width: 580px;
+    margin-top: 69px;
+    margin-left: 90px;
+    padding-right: 73px;
+}
+
+.displey-chill {
+    display: flex;
+}
+
+.chill-container {
+    margin-top: 2px;
+}
+
+.chill-img {
+    margin-top: -4px;
+}
+
+.title-chill {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 130%;
+}
+
+.description-chill {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 25px;
+}
+
+.description-chill-none {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 38px;
+    margin-top: 25px;
+    display: none;
+}
+
+.chill-button {
+    border: 2px solid #219653;
+    box-sizing: border-box;
+    border-radius: 65px;
+    background-color: white;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #219653;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+.chill-button:hover {
+    background-color: #E1FFEE;
+}
+
+.chill-button-pos {
+    margin-top: 50px;
+    margin-left: 0px;
+}
+
+.chill-button-2 {
+    border: 2px solid #219653;
+    box-sizing: border-box;
+    border-radius: 65px;
+    background-color: white;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #219653;
+    margin-top: 49px;
+    margin-left: 0px;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+.chill-button-2:hover {
+    background-color: #E1FFEE;
+}
+
+.text-chill-button {
+    margin: 30px 35px;
+}
+
+.chill-img-2 {
+    margin-top: -6px;
+    margin-left: 17px;
+    width: 60.97%;
+}
+
+.features-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features-container:hover .show-place-features {
+    opacity: 1;
+}
+
+.features-container {
+    width: 33.33333333%;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+}
+
+.features-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+75,000000+100&0+36,0.5+75,0.5+75,0.6+100 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 36%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.6) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 36%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.6) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 36%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.6) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#99000000', GradientType=0);
+    /* IE6-9 */
+}
+
+.features-text {
+    width: 381px;
+    position: absolute;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 0;
+    bottom: -6px;
+    left: 50.1739%;
+    top: 84.6%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.show-place-features {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #E1FFEE;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.show-place-features-content {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 50.4%;
+    left: 47.1%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.show-place-features p {
+    max-width: 140px;
+    color: #219653;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.show-place-features p a {
+    color: #219653;
+}
+
+
+.arrow-img {
+    position: absolute;
+    top: 65%;
+    left: 71%;
+}
+
+.house-features {
+    margin-top: -5px;
+}
+
+.show-place-features-last {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #E1FFEE;
+    top: 0;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity .2s linear;
+    color: #219653;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.show-place-features-last p a {
+    color: #219653;
+}
+
+.show-place-features-text-last {
+    max-width: 140px;
+}
+
+.arrow-img-last {
+    position: absolute;
+    top: 65%;
+    left: 71%;
+}
+
+.house-price-prewiev-content {
+    display: flex;
+}
+
+.house-price-prewiev-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 130%;
+    color: #161616;
+    margin-top: 75px;
+    margin-left: 90px;
+}
+
+.house-price-prewiev-description {
+    max-width: 597px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    color: #161616;
+    margin-top: 27px;
+    margin-left: 90px;
+}
+
+.p-house-prewiev {
+    margin-top: 25px;
+}
+
+.p-house-prewiev-first {
+    margin-top: -1px;
+}
+
+/*! house price begin */
+
+.house-price {
+    margin-top: -2px;
+}
+
+
+.house-price-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.house-price-info {
+    width: 45%;
+    margin-left: 90px;
+    margin-top: 74px;
+    padding-right: 5px;
+}
+
+.house-price-info-img {
+    width: 50%;
+    margin-top: -1px;
+    position: relative;
+    margin-bottom: -2px;
+    margin-right: 0px;
+}
+
+.house-price-info-img-hiden {
+    overflow: hidden;
+}
+
+
+.house-price-info-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 130%;
+    color: #161616;
+}
+
+.house-price-info-characteristic {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    color: #219653;
+    margin-top: 30px;
+}
+
+.house-price-info-list-ul {
+    display: flex;
+}
+
+.house-price-info-list-li {
+    list-style-type: disc;
+    margin-right: 50px;
+    padding-left: 18px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    color: #000000;
+    margin-top: 33px;
+}
+
+.house-price-info-list-li::marker {
+    color: #219653;
+}
+
+.house-price-info-list-li:first-child {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.house-price-info-text {
+    max-width: 780px;
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    color: #161616;
+}
+
+.house-price-info-button {
+    display: flex;
+    margin-top: 49px;
+    margin-left: 0px;
+}
+
+.house-price-info-content {
+    display: flex;
+    margin-left: 10px;
+}
+
+.house-price-info-price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 38px;
+    color: #161616;
+    margin-left: 35px;
+    margin-top: 26px;
+}
+
+.house-price-info-unit {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 38px;
+    color: #161616;
+    margin-top: 34px;
+    margin-left: 7px;
+}
+
+
+.house-price-img-container-mini {
+    position: absolute;
+    top: 92.4%;
+    left: 50.2%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    width: 545px;
+    justify-content: center;
+}
+
+.house-price-mini-content {
+    display: none;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 92%;
+    transform: translate(-50%, -50%);
+}
+
+.house-price-img-mini {
+    margin: 0 10px;
+    transition: scale .2s linear;
+}
+
+.house-price-img-mini:hover {
+    scale: 1.5;
+}
+
+.house-price-info-prew-unit {
+    margin-top: 33px;
+    margin-right: -30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 38px;
+    color: #161616;
+}
+
+.last-two-element-price {
+    margin-top: 25px;
+}
+
+.house-price-info-prew-unit-last {
+    margin-left: 37px;
+    margin-right: -33px;
+}
+
+.show-place-img {
+    margin-top: -1px;
+}
+
+.showplace-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.showplace-info {
+    margin: 75px 75px 90px 90px;
+    width: 30%;
+}
+
+.showplace-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 130%;
+    color: #161616;
+}
+
+.showplace-text {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 25px;
+
+}
+
+.showplace-text p {
+    margin-top: 25px;
+}
+
+.delete-top-margin {
+    margin-top: -5px;
+}
+
+.show-place-img-2 {
+    margin-top: -5px;
+    margin-left: 2px;
+    height: 532px;
+}
+
+.showplace-img-container {
+    width: 100%;
+    display: flex;
+
+}
+
+.showplace-mini-img {
+    width: 33.3333333333333%;
+}
+
+.show-place-title-p {
+    margin-top: -1.4px;
+}
+
+.comments-content-title {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 23px;
+    color: #161616;
+}
+
+.comments {
+    padding-top: 102px;
+    margin-left: 180px;
+}
+
+.comments-content-title {
+    margin-bottom: 81px;
+}
+
+
+.comments-user-grade {
+    max-width: 170px;
+}
+
+.comments-content-user {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.comments-content-stars {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+.comments-content-star {
+    margin: 0 6px;
+}
+
+.comments-content-star:last-child {
+    margin-right: 0px;
+}
+
+.commetns-user-name-and-date {
+    display: flex;
+}
+
+.comments-user-text-content {
+    margin-left: 50px;
+}
+
+.comments-user-name {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 23px;
+    margin-top: 9.5px;
+}
+
+.comments-user-date {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #434343;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.comments-user-text {
+    max-width: 1520px;
+    margin-top: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    color: #161616;
+}
+
+.geolocation {
+    margin-left: 191px;
+    padding-top: 120px;
+}
+
+.geolocation-content {
+    max-width: 1740px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 23px;
+    color: #161616;
+}
+
+.geolocation-number a {
+    color: #161616;
+}
+
+.geolocation-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 23px;
+    color: #161616;
+}
+
+.geolocation-info {
+    display: flex;
+    margin-top: 64px;
+}
+
+.geolocation-number {
+    margin-right: 45px;
+}
+
+.geolocation-street {
+    margin-left: 25px;
+    margin-right: 70px;
+}
+
+.geolocation-map {
+    max-width: 100%;
+    margin-top: 54px;
+}
+
+.geolocation-map img {
+    max-width: 100%;
+}
+
+#map {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+.geolocation-messenger {
+    display: flex;
+    justify-content: space-between;
+}
+
+.geolocation-messenger p {
+    margin-top: 70px;
+}
+
+.geolocation-messenger-ico {
+    display: flex;
+    margin-top: 62px;
+}
+
+.geolocation-messenger-ico img {
+    margin: 0 25px;
+}
+
+.geolocation-messenger-ico img:last-of-type {
+    margin-right: 0px;
+}
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 4px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+
+
+.send-form {
+    position: fixed;
+    z-index: 500;
+    left: 50%;
+    top: -250%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 50%);
+    transition: top 0.7s, background-color 2s;
+}
+
+.send-form.animate-send-form {
+    top: 50%;
+    background-color: rgb(0, 0, 0, 30%);
+}
+
+.decor {
+    position: relative;
+    max-width: 400px;
+    margin: 50px auto 0;
+    background: white;
+    border-radius: 30px;
+}
+
+.form-left-decoration,
+.form-right-decoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #f69a73;
+    border-radius: 20px;
+}
+
+.form-left-decoration {
+    bottom: 60px;
+    left: -30px;
+}
+
+.form-right-decoration {
+    top: 60px;
+    right: -30px;
+}
+
+.form-left-decoration:before,
+.form-left-decoration:after,
+.form-right-decoration:before,
+.form-right-decoration:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background: white;
+}
+
+.form-left-decoration:before {
+    top: -20px;
+}
+
+.form-left-decoration:after {
+    top: 20px;
+    left: 10px;
+}
+
+.form-right-decoration:before {
+    top: -20px;
+    right: 0;
+}
+
+.form-right-decoration:after {
+    top: 20px;
+    right: 10px;
+}
+
+.circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+}
+
+.form-inner {
+    padding: 50px;
+    padding-left: 25px;
+}
+
+.form-inner input,
+.form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background: #E9EFF6;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-inner input[type="submit"] {
+    margin-top: 30px;
+    background: #f69a73;
+    border-bottom: 4px solid #d87d56;
+    color: white;
+    font-size: 14px;
+}
+
+.form-inner textarea {
+    resize: none;
+}
+
+.form-inner h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #707981;
+    margin-left: 10px;
+}
+
+.send-form-house {
+    margin: 10px 0 15px 10px;
+    font-size: 16px;
+}
+
+/* @media */
+
+@media (max-width: 1920px) {
+    .header-logo {
+        margin-top: 4px;
+    }
+
+    .header-content {
+        margin-top: -9px;
+    }
+
+    .header-contacts {
+        margin-left: 333px;
+    }
+
+    .header-contact {
+        margin-right: 41px;
+    }
+
+    .header-button {
+        text-align: right;
+    }
+
+    .button-header {
+        width: 230px;
+    }
+
+    .header-contact:last-child {
+        margin-right: 0px;
+    }
+
+    .button-header a {
+        margin-left: 19px;
+    }
+
+    .button-header {
+        height: 99px;
+    }
+
+    .body-content {
+        margin-top: -5px;
+    }
+
+    .house-price-info {
+        width: 46%;
+        margin-left: 90px;
+    }
+
+    .house-price-info-img {
+        width: 50%;
+        margin-right: 0px;
+        margin-top: -1px;
+    }
+
+    .house-price-img-margin-right {
+        margin-right: 0px;
+    }
+
+    .house-price-overflow {
+        overflow: hidden;
+    }
+
+    .house-price-info-padding {
+        padding-left: 8px;
+    }
+
+    .showplace-info {
+        margin: 77px 50px 75px 90px;
+    }
+
+    .show-place-img {
+        margin-top: -2px;
+    }
+
+    .show-place-img-2 {
+        /* margin-top: -4px;
+        padding-left: 20px; */
+        background-image: url(img/show-place/house.jpg);
+
+        background-position: center center;
+        background-size: cover;
+        margin-left: 36px;
+        margin-top: -4px;
+        background-repeat: no-repeat;
+        height: 532px;
+        width: 1170px;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .showplace-title-margin-top {
+        margin-top: 73px;
+    }
+
+    .comments {
+        padding-top: 102px;
+        margin-left: 90px;
+    }
+
+    .comments-content-user {
+        margin-bottom: 68px;
+    }
+
+    .comments-content-stars {
+        margin-top: 7px;
+    }
+
+    .geolocation {
+        margin-left: 90px;
+        padding-top: 116px;
+        max-width: 1740px;
+        margin-right: 90px;
+    }
+
+    .geolocation-info {
+        margin-top: 65px;
+    }
+
+    .geolocation-messenger p {
+        margin-top: 71px;
+    }
+
+    .house-price-info-img {
+        margin-top: -2px;
+    }
+
+}
+
+@media (max-width: 1919px) {
+    .chill-img {
+        width: 65%;
+        overflow: hidden;
+    }
+
+    .chill-img-2 {
+        width: 60%;
+        overflow: hidden;
+    }
+
+    .chill-info-2 {
+        padding-right: 89px;
+    }
+
+    .display-br {
+        display: none;
+    }
+
+    .house-price-prewiev-img {
+        width: 60%;
+        z-index: 99;
+    }
+
+    .house-price-prewiev-img img {
+        width: 100%;
+
+    }
+
+    .house-price-info-img {
+        width: 50%;
+        margin-top: -2px;
+        z-index: 0;
+    }
+
+    .house-price-info-img img {
+        width: 103.4%;
+        overflow: hidden;
+    }
+
+    .show-place-img-2 {
+        margin-top: -4px;
+        z-index: 0;
+    }
+
+}
+
+@media (max-width: 1867px) {
+    .showplace-info {
+        margin: 50px 50px 50px 50px;
+    }
+}
+
+@media (max-width: 1814px) {
+    .header-contacts {
+        margin-left: 100px;
+    }
+
+    .header-button {
+        margin-left: auto;
+    }
+
+    .house-img {
+
+        max-width: 66.66666666666666666%;
+
+    }
+
+    .house-info-img {
+        max-width: 33.333333333333333333333%;
+    }
+
+    .house-price-info {
+        margin-left: 45px;
+        width: 48.5%;
+        margin-top: 40px;
+    }
+
+    .show-place-img {
+        width: 66.66666%;
+    }
+
+    .show-place-img img {
+        width: 100%;
+    }
+
+    .show-place-img-2 {
+        width: 67.66666666666666%;
+        margin-top: -6px;
+        margin-left: 0px;
+    }
+
+    .showplace-img-container {
+        margin-top: -12px;
+    }
+
+    .show-place-img-2 img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1740px) {
+    .showplace-info {
+        margin: 25px 25px 25px 25px;
+    }
+
+    .show-place-img-2 {
+        margin-top: -4px;
+    }
+
+    .showplace-img-container {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 1684px) {
+    .header-contacts {
+        margin-left: 50px;
+    }
+
+    .header-contact {
+        margin-right: 25px;
+    }
+
+    .chill-img-2 img {
+        margin-left: -100px;
+    }
+
+    .house-price-prewiev-description {
+        margin-left: 30px;
+    }
+
+    .house-price-prewiev-title {
+        margin: 0;
+        margin-left: 30px;
+    }
+
+    .geolocation-title {
+        font-size: 30px;
+    }
+
+    .geolocation-info {
+        font-size: 18px;
+    }
+
+    .geolocation-messenger {
+        font-size: 18px;
+    }
+
+    .comments-content-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1645px) {
+    .showplace-content {
+        flex-wrap: wrap;
+    }
+
+    .show-place-img {
+        width: 100%;
+    }
+
+    .show-place-img-2 {
+        width: 100%;
+    }
+
+    .flex-column-reverse {
+        flex-flow: column-reverse;
+    }
+
+    .showplace-info {
+        margin: 0 auto;
+        margin-bottom: 25px;
+        width: 50%;
+    }
+
+    .showplace-text {
+        margin-top: 10px;
+    }
+
+    .house-price-info-img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1618px) {
+    .header-content {
+        font-size: 16px;
+    }
+
+    .button-header {
+        font-size: 16px;
+    }
+
+    .chill-img-2 img {
+        margin-left: -150px;
+    }
+
+    .house-price-content {
+        flex-wrap: wrap;
+    }
+
+    .house-price-content:nth-child(2n+1) {
+        flex-flow: column-reverse;
+    }
+
+    .house-price-info {
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .house-price-info-img {
+        width: 100%;
+    }
+
+    .house-price-img-container-mini {
+        scale: 1.8;
+        left: 50%;
+    }
+
+    .text-nowrap {
+        white-space: nowrap;
+    }
+
+    .house-price-info-list-ul {
+        flex-wrap: wrap;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1600px) {
+    .chill-info-1 {
+        margin-left: 30px;
+    }
+
+    .chill-img-2 img {
+        margin-left: -150px;
+    }
+
+    .chill-info-2 {
+        padding-right: 30px;
+        margin-left: 30px;
+    }
+
+    .features-container {
+        width: 50%;
+    }
+
+    .features-container img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1550px) {
+    .chill-img-2 img {
+        margin-left: -225px;
+    }
+
+    .house-price-prewiev-description {
+        font-size: 18px;
+        margin: 25px;
+        margin-top: 15px;
+        line-height: 28.8px;
+    }
+
+    .house-price-prewiev-title {
+        margin: 0;
+        margin-left: 25px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1432px) {
+    .header-content {
+        font-size: 14px;
+    }
+
+    .button-header {
+        font-size: 14px;
+    }
+
+    .chill-info-1 {
+        margin-left: 10px;
+    }
+
+    .chill-info-2 {
+        padding-right: 10px;
+        margin-left: 10px;
+    }
+
+    .chill-img-2 img {
+        margin-left: -250px;
+    }
+
+    .house-price-img-container-mini {
+        left: 50%;
+    }
+
+    .geolocation {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+}
+
+@media (max-width: 1339px) {
+    .header-content {
+        justify-content: space-between;
+        margin-top: -10px;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 101%;
+        background-color: white;
+        height: 75px;
+        z-index: 2000;
+    }
+
+    .header-content._active .header-nav {
+        display: block;
+        position: fixed;
+        right: 0;
+        width: 100%;
+    }
+
+    .header-content._active .header-nav .nav-list {
+        flex-direction: column;
+        padding-top: 195px;
+        width: 100%;
+    }
+
+    .header-content._active .header-nav .nav-list .header-li {
+        margin-right: 10px;
+        padding-top: 10px;
+        text-align: right;
+        font-size: 12px;
+        /* background-color: #a6e4ff; */
+        background-color: #E1FFEE;
+        color: #219653;
+        width: 100%;
+    }
+
+    .header-content._active .header-nav .nav-list .header-li:first-child {
+        border-top: 1px #219653 solid;
+    }
+
+    .header-content._active .header-nav .nav-list .header-li a {
+        margin-right: 10px;
+    }
+
+    .header-content._active .header-nav .nav-list .header-li:last-child {
+        padding-bottom: 10px;
+    }
+
+    .header-logo {
+        margin: 0 25px;
+    }
+
+    .header-button {
+        margin-left: 0;
+
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-contacts {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        z-index: 1001;
+    }
+
+    .header {
+        max-width: 100%;
+        height: 75px;
+    }
+
+    .header-button {
+        z-index: -1;
+    }
+
+    .button-header {
+        width: 700px;
+        height: 75px;
+    }
+
+    .body-content {
+        margin-top: -15px;
+    }
+
+    .house-img {
+        max-width: 122%;
+        height: 760px;
+        margin-top: 5px;
+    }
+
+    .house-img img {
+        margin-left: -400px;
+    }
+
+    .button-header a {
+        margin-left: 0;
+    }
+
+    .chill-img {
+        width: 100%;
+        overflow: visible;
+        margin-left: 0;
+    }
+
+    .chill-img img {
+        width: 100%;
+    }
+
+
+    .chill-img-2 {
+        width: 100%;
+        overflow: visible;
+        margin-left: 0;
+    }
+
+    .chill-img-2 img {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .displey-chill {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+        width: 100%;
+    }
+
+    .chill-info-1 {
+        padding-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .chill-info-2 {
+        padding-right: 0;
+        padding-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .margin-auto {
+        margin: 0 auto;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+
+    .house-price-prewiev-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .house-price-prewiev-img {
+        width: 100%;
+    }
+
+    .house-price-prewiev-img img {
+        width: 100%;
+    }
+
+    .house-price-prewiev-text {
+        margin: 0 auto;
+        width: 360px;
+    }
+
+    .house-price-info-title {
+        font-size: 30px;
+        line-height: 42px;
+        margin-left: 10px;
+    }
+
+    .house-price-info-characteristic {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .house-price-info-list-li {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .house-price-info-text {
+        font-size: 18px;
+    }
+
+    .chill-button {
+        font-size: 16px;
+    }
+
+    .house-price-info-price {
+        font-size: 30px;
+    }
+
+    .house-price-info-unit {
+        font-size: 16px;
+    }
+
+    .showplace-text {
+        font-size: 18px;
+        line-height: 29px;
+    }
+
+    .showplace-title {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .showplace-info {
+        width: 95%;
+    }
+
+    .showplace-info {
+        margin-top: 10px;
+    }
+
+    .showplace-img-container {
+        flex-wrap: wrap;
+    }
+
+    .showplace-mini-img {
+        width: 100%;
+        margin-top: -4px;
+    }
+
+    .showplace-mini-img img {
+        width: 100%;
+    }
+
+    .comments-user-grade {
+        height: 120px;
+        width: 120px;
+        position: relative;
+    }
+
+    .comments-content-stars {
+        position: absolute;
+        left: 155px;
+        top: 35px;
+    }
+
+    .comments-content-img {
+        width: 120px;
+    }
+
+    .comments-content-img img {
+        width: 120px;
+    }
+
+    .comments-user-name {
+        font-size: 20px;
+    }
+
+    .comments-user-text {
+        font-size: 16px;
+        margin-right: 25px;
+    }
+
+    .comments-user-text {
+        line-height: 24px;
+    }
+
+    .geolocation {
+        margin-left: 25px;
+        margin-right: 25px;
+        padding-top: 0px;
+    }
+
+    .comments {
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 1279px) {
+    .features-container {
+        width: 100%;
+        height: 650px;
+    }
+
+    .house-price-img-container-mini {
+        left: 50%;
+    }
+
+    .geolocation-number {
+        margin-right: 20px;
+    }
+
+    .geolocation-street {
+        margin-left: 0px;
+        margin-right: 40px;
+    }
+
+    .geolocation-map {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .geolocation-info {
+        display: block;
+    }
+
+    .geolocation-info {
+        margin-top: 15px;
+    }
+
+    .geolocation-number {
+        margin-bottom: 20px;
+    }
+
+    .geolocation-street {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .button-header {
+        width: 500px;
+    }
+
+    .house-img img {
+        left: -400px;
+    }
+
+    .features-container {
+        height: 550px;
+    }
+
+    .house-price-img-container-mini {
+        scale: 1.4;
+        left: 50%;
+    }
+
+    .house-price-info-list-li {
+        margin-top: 5px;
+    }
+
+    .house-price-info-list-li:nth-child(4) {
+        padding-left: 0px;
+    }
+
+    .house-price-info-list-li:nth-child(3) {
+        margin-right: 70px;
+    }
+
+    .comments-user-date {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 940px) {
+
+    .show-house {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+    }
+
+    .header-logo img {
+        width: 37px;
+        height: 41px;
+    }
+
+    .header-content._active .header-nav .nav-list {
+        padding-top: 184px;
+    }
+
+    .house-img {
+        margin-top: -6px;
+        /* max-width: 100%; */
+        overflow: hidden;
+        position: static;
+        width: 100%;
+    }
+
+    .house-info-img {
+        max-width: 100%;
+    }
+
+    .house-img img {
+        position: static;
+        margin-left: 0px;
+    }
+
+    .house-price-info-list-li {
+        margin-right: 30px;
+    }
+
+    .house-info {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .title-house {
+        margin-top: 0px;
+    }
+
+    .house-info-img {
+        margin-top: 0px;
+    }
+
+    .header-content {
+        height: 64px;
+        z-index: 100;
+        /* width: 375px; */
+        /* width: 100%; */
+        /* margin-left: -29px; */
+    }
+
+    .button-header {
+        height: 64px;
+    }
+
+    .house-info-img img {
+        width: 100%;
+    }
+
+    .house-info-center {
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .title-house {
+        margin-left: 0px;
+        font-size: 30px;
+        line-height: 42px;
+        margin-top: 36px;
+    }
+
+    .description-house {
+        margin-left: 0px;
+        font-size: 18px;
+        width: 300px;
+        line-height: 29px;
+        margin-top: 19px;
+    }
+
+    .title-chill {
+        font-size: 30px;
+    }
+
+    .none-block {
+        display: none;
+    }
+
+    .description-chill {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .description-chill-none {
+        display: block;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .chill-info-1 {
+        margin: 25px;
+        padding: 0;
+    }
+
+    .chill-info-2 {
+        margin: 25px;
+        padding: 0;
+    }
+
+    .features-container {
+        height: 500px;
+    }
+
+    .features-text {
+        font-size: 18px;
+    }
+
+    .show-place-features-text p {
+        font-size: 18px;
+    }
+
+    .show-place-features-text-last p {
+        font-size: 18px;
+    }
+
+    .arrow-img {
+        display: none;
+    }
+
+    .arrow-img-last {
+        display: none;
+    }
+
+    .show-place-features-content {
+        top: 50%;
+        left: 50%;
+    }
+
+    .features-display-none {
+        display: none;
+    }
+
+    .features-height {
+        height: 158px;
+    }
+
+    .house-price-info-list-li:nth-child(4) {
+        /* list-style-type: none; */
+    }
+
+    .geolocation-map {
+        overflow: hidden;
+        width: 700px;
+        height: 700px;
+        position: relative;
+    }
+
+    .geolocation-map img {
+        height: 600px;
+        max-width: none;
+        /* margin-left: -200px; */
+    }
+}
+
+@media (max-width: 825px) {
+    .button-header {
+        width: 350px;
+    }
+
+    .house-img {
+        position: relative;
+        width: 100%;
+    }
+
+    .house-img img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 800px;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+
+    .features-container {
+        height: 450px;
+    }
+
+    .features-height {
+        height: 158px;
+    }
+
+    .house-price-info-button {
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+    }
+
+    .house-price-info .chill-button {
+        width: 100%;
+    }
+
+    .house-price-info .chill-button:nth-child(2) {
+        width: 80%;
+    }
+
+    .house-price-info {
+        width: 80%;
+    }
+
+    .house-price-img-container-mini {
+        scale: 1;
+        left: 50%;
+    }
+
+    .comments-user-text {
+        max-width: none;
+        margin-left: -171px;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 685px) {
+    .features-container {
+        height: 360px;
+    }
+
+    .features-height {
+        height: 158px;
+    }
+
+    .show-place-img-2 {
+        height: 323px;
+    }
+
+    .geolocation-messenger {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-flow: column-reverse;
+    }
+
+    .geolocation-messenger-ico a:nth-child(1) img {
+        margin-left: 0px;
+    }
+
+    .geolocation-messenger p {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    .geolocation-messenger-ico {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .features-container {
+        height: 300px;
+    }
+
+    .features-height {
+        height: 158px;
+    }
+
+    .house-price-mini-content {
+        display: block;
+    }
+
+    .house-price-img-container-mini {
+        display: none;
+    }
+
+    .comments {
+        margin-left: 25px;
+        margin-right: 0px;
+        margin-top: 25px;
+    }
+
+    .comments-content-title {
+        margin-bottom: 40px;
+    }
+
+    .geolocation-map img {
+        /* margin-left: -300px; */
+    }
+
+    .geolocation {
+        margin: 0;
+    }
+
+    .geolocation-title {
+        margin-left: 25px;
+    }
+
+    .geolocation-info {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .geolocation-street {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .button-header {
+        width: 250px;
+    }
+
+    .features-container {
+        overflow: hidden;
+    }
+
+    .features-container img {
+        scale: 1.5;
+    }
+
+    .comments-content-img img {
+        width: 60px;
+    }
+
+    .comments-content-img {
+        width: 60px;
+        margin-top: 10px;
+    }
+
+    .comments-user-text-content {
+        margin-left: 15px;
+    }
+
+    .comments-content-stars {
+        left: 50px;
+        scale: 0.8;
+    }
+
+    .comments-user-text {
+        margin-left: -75px;
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 450px) {
+    .button-header {
+        width: 205px;
+    }
+
+    .features-container img {
+        scale: 1.6;
+    }
+
+    .features-container img {
+        margin-left: -30px;
+    }
+
+    .house-price-info {
+        width: 100%;
+        padding-left: 0px;
+        /* padding-right: 25px; */
+        padding-right: 0px;
+    }
+
+    .house-price-content:nth-child(2n+1) {
+        width: 100%;
+    }
+
+    .house-price-info-img {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .house-price-info-img img {
+        overflow: hidden;
+        width: 375px;
+    }
+
+    .house-price-info-button .chill-button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .house-price-info-button {
+        margin-top: 25px;
+    }
+
+    .house-price-info-price {
+        margin-left: 0px;
+    }
+
+    .house-price-info-prew-unit-last {
+        margin-right: 5px;
+    }
+
+    .geolocation-map img {
+        /* margin-left: 0px; */
+        /* width: 100%; */
+        position: absolute;
+        left: 84%;
+        top: 50%;
+        height: 743px;
+        width: 700px;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+
+    .features-container img {
+        width: 108%;
+        height: 100%;
+    }
+
+    .house-price-info-list-li:nth-child(3) {
+        margin-left: 15px;
+    }
+
+    .house-price-info-list-li:nth-child(5) {
+        margin-left: 15px;
+    }
+
+    .house-price-info .chill-button:nth-child(2n+1) {
+        width: 70%;
+        margin-left: 10px;
+    }
+
+    .house-price-info-list {
+        margin-left: 10px;
+    }
+
+    .house-price-info-title {
+        margin-left: 10px;
+    }
+
+    .house-price-info-characteristic {
+        margin-left: 10px;
+    }
+
+    .house-price-info-text {
+        margin-left: 10px;
+    }
+}
+
+/* @media (max-width: 360px) {
+    .house-img {
+        height: 500px;
+    }
+
+    .house-img img {
+        left: -480px;
+        top: -125px;
+        scale: 0.7;
+    }
+
+    .house-info-img {
+        scale: 0.9;
+        margin-left: -114px;
+        margin-top: -16px;
+    }
+
+    .house-info-img img {
+        width: 172%;
+    }
+
+    .house-info-center {
+        margin-left: 24px;
+    }
+
+    .chill-button p {
+        margin: 28px 90px;
+        font-size: 16px;
+    }
+
+    .chill-button-2 p {
+        margin: 28px 90px;
+        font-size: 16px;
+    }
+
+    .show-place-features-last {
+        height: 158px;
+    }
+
+    .features-height {
+        height: 158px;
+    }
+
+    .show-place-img-2 {
+        height: 213.5px;
+    }
+
+    
+} */
+
+/* java script */
+.display-show {
+    display: block;
+}
